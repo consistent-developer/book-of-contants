@@ -8,23 +8,27 @@ export default function Navbar () {
   const { user, login, logout, authReady } = useContext(AuthContext)
   console.log(user)
   return (
-    < div className="container" >
-      <nav>
-        <Image src="/rupee.png" width={50} height={48}n layout="responsive" />
-        <h1>Gaming Vibes</h1>
+
+    < div className="container pt-2 bg-white tracking-wider" >
+      <nav className="flex justify-between text-sm lg:text-xl">
+
         {authReady && (
-          <ul>
-            <li><Link href="/"><a>Home</a></Link></li>
-            <li><Link href="/guides"><a>Guides</a></Link></li>
-            {!user && <li onClick={login} className="btn">Log in/Sign up</li>}
-            {user && <li>{user.email}</li>}
-            {user && <li onClick={logout} className="btn">Log Out</li>}
+          <ul className="flex justify-end mx-1 mt-4 mb-6 flex cursor-pointer">
+            <li className="mx-1 md:mx-3 self-center "><Link href="/"><a>Home</a></Link></li>
+            <li className="mx-1 md:mx-3 self-center"><Link href="/guides"><a>Chapters</a></Link></li>
+            <li className="mx-1 md:mx-3 self-center"><Link href="/guides"><a>Projects</a></Link></li>
+          </ul>
+        )}
+
+        {authReady && (
+          <ul className="flex justify-end mx-1 mt-4 mb-6 flex cursor-pointer">
+            {!user && <li onClick={login} className="btn flex justify-end self-center ">Log in/Sign up</li>}
+            {/* {user && <li >{user.email}</li>} */}
+            {user && <li onClick={logout} className="btn self-center">Log Out</li>}
           </ul>
         )}
       </nav>
-      <div className="banner">
-        <Image src="/banner.png" width='1920' height='1080' layout="responsive" />
-      </div>
+      <div></div>
     </div>
   )
 }

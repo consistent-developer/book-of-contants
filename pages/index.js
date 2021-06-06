@@ -1,12 +1,20 @@
-import styles from '../styles/Home.module.css'
-
-export default function Home () {
+import Link from 'next/link'
+const Welcome = () => {
   return (
-    <div className={styles.home}>
-      <h2>Welcome to Gaming Vibes</h2>
-      <div>
-        <p>In most organized forms of writing, such as essays, paragraphs contain a topic sentence . This topic sentence of the paragraph tells the reader what the paragraph will be about. Essays usually have multiple paragraphs that make claims to support a thesis statement, which is the central idea of the essay.</p>
-      </div>
+    <div>
+      <section class="container mx-auto flex px-5 py-2 pt-10 items-center justify-center flex-col  ">
+        <img src="drwkit/drawkit-grape-pack-illustration-20.svg" alt=""
+          class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" />
+        <div class="text-center lg:w-2/3 w-full">
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">unique book of concepts</h1>
+          <Link href="/">
+            <a><i class="fas fa-play animate-bounce p-4 m-4 border-2 rounded-full text-gray-600 border-gray-600 "></i></a>
+          </Link>
+        </div>
+      </section>
+
     </div>
-  )
+  );
 }
+
+export default Welcome;

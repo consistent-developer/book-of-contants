@@ -1,6 +1,5 @@
 import { useContext, useEffect, useState } from 'react'
 import AuthContext from '../stores/authContaxts'
-import styles from '../styles/Guides.module.css'
 
 export default function Guides () {
   const { user, authReady, login } = useContext(AuthContext)
