@@ -9,7 +9,7 @@ export default function Navbar () {
   console.log(user)
   return (
 
-    < div className="container pt-2 bg-white tracking-wider" >
+    <div className="pt-2 bg-white tracking-wider" >
       <nav className="flex justify-between text-sm lg:text-xl">
 
         {authReady && (
