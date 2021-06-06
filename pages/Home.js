@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react'
 import AuthContext from '../stores/authContaxts'
-import ReadMinutesBottom from "../Components/ReadMinutesBottom"
+import ReadMinutesBottom from "../components/ReadMinutesBottom"
 import Link from 'next/link';
 
 export default function Guides () {
