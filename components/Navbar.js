@@ -13,7 +13,7 @@ export default function Navbar() {
         </ul>
       </nav>
       <div className="banner">
-        <Image src="/banner.png" width={966} height={276} />
+        <Image src="/banner.png" width={966} height={276} layout="responsive"/>
       </div>
     </div>
   )
