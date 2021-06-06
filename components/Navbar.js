@@ -10,7 +10,7 @@ export default function Navbar () {
   return (
     < div className="container" >
       <nav>
-        <Image src="/rupee.png" width={50} height={48} />
+        <Image src="/rupee.png" width={50} height={48}n layout="responsive" />
         <h1>Gaming Vibes</h1>
         {authReady && (
           <ul>
@@ -23,7 +23,7 @@ export default function Navbar () {
         )}
       </nav>
       <div className="banner">
-        <Image src="/banner.png" width={966} height={276} layout="responsive" />
+        <Image src="/banner.png" width='1920' height='1080' layout="responsive" />
       </div>
     </div>
   )
