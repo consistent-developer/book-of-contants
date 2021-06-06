@@ -3,12 +3,12 @@ import AuthContext from '../stores/authContaxts'
 
 export default function Guides () {
   const { user, authReady, login } = useContext(AuthContext)
-  const [guides, setGuides] = useState(null)
+  const [chapters, setChapters] = useState(null)
   const [error, setError] = useState(null)
 
   useEffect(() => {
     if (authReady) {
-      fetch('/.netlify/functions/guides', user && {
+      fetch('/.netlify/functions/chapters', user && {
         headers: {
           Authorization: 'Bearer ' + user.token.access_token
         }
@@ -22,11 +22,11 @@ export default function Guides () {
         })
         .then(data => {
           setError(null)
-          setGuides(data)
+          setChapters(data)
         })
         .catch(err => {
           setError(err.message)
-          setGuides(null)
+          setChapters(null)
         })
     }
 
@@ -43,10 +43,10 @@ export default function Guides () {
         </div>
       )}
 
-      {guides && guides.map(guide => (
-        <div key={guide.title}>
-          <h3>{guide.title}</h3>
-          <h4>written by {guide.author}</h4>
+      {chapters && chapter.map(Chapter => (
+        <div key={chapter.title}>
+          <h3>{chapter.title}</h3>
+          <h4>written by {chapter.body}</h4>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At corrupti iste ab magnam dignissimos id maxime rerum quae minima. Delectus maxime culpa est consequatur veritatis, perspiciatis cum corrupti possimus quis?</p>
         </div>
       ))}
