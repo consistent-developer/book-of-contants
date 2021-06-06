@@ -1,5 +1,7 @@
 import { useContext, useEffect, useState } from 'react'
 import AuthContext from '../stores/authContaxts'
+import ReadMinutesBottom from "../Components/ReadMinutesBottom"
+import Link from 'next/link';
 
 export default function Guides () {
   const { user, authReady, login } = useContext(AuthContext)
@@ -33,7 +35,7 @@ export default function Guides () {
   }, [user, authReady])
 
   return (
-    <div>
+    <div className="tracking-widest px-6 ">
 
       {!authReady && <div>Loading...</div>}
 
@@ -43,13 +45,60 @@ export default function Guides () {
         </div>
       )}
 
-      {chapters && chapter.map(Chapter => (
-        <div key={chapter.title}>
-          <h3>{chapter.title}</h3>
-          <h4>written by {chapter.body}</h4>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At corrupti iste ab magnam dignissimos id maxime rerum quae minima. Delectus maxime culpa est consequatur veritatis, perspiciatis cum corrupti possimus quis?</p>
+
+      {/* Hero Image  */}
+      <div className="lg:w-1/3 md:w-1/2 w-full mx-auto">
+        <div className="h-full flex items-center">
+          <img className="mt-4 w-full  md:4/12 mb-10 mx-auto imageBackground object-cover object-center rounded-xl" alt="hero" src="PNG/Presentation.png"></img>
         </div>
-      ))}
+      </div>
+
+
+      <h1 className="pb-3 text mt-0 text-xl lg:text-2xl font-bold tracking-widest text">Learning Paths</h1>
+      <h2 className="text-sm lg:text-base text2">Learning paths created by dev.</h2>
+      <ReadMinutesBottom />
+
+
+
+      {/* Chapters */}
+      <section className="text-gray-600 body-font">
+        <div className=" my-10 lg:mt-20 mx-auto">
+
+
+          {/* Card Tile  */}
+          <div className="flex flex-col w-full mb-4">
+            <h1 className="sm:text-3xl text-2xl font-medium text-gray-900">Chapters</h1>
+            {/* <p className="lg:w-2/3 leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p> */}
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 -m-2">
+            {chapters && chapters.map(chapter => (
+              <div key={chapter.title}>
+
+
+                <Link href={chapter.path}>
+                  <a>
+                    <div className="m-2">
+                      <div className="w-full border-gray-200">
+                        <div className="h-full flex items-center  border p-4 rounded-lg">
+                          <img alt="team" className="w-28 h-28 bg-gray-100 object-cover object-center flex-shrink-0 rounded-lg mr-4" src={chapter.images} />
+                          <div className="flex-grow">
+                            <h6 className="w-20 mb-2 text-sm p-0.5 text-center text-white bg-green-400 rounded-md">{chapter.type}</h6>
+                            <h2 className="text-gray-900 title-font lg:text-2xl font-medium">{chapter.title}</h2>
+                            <p className="text-gray-500 lg:text-base">{chapter.body}</p>
+                            <p className="text-gray-500 lg:text-base">{chapter.id}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </Link>
+              </div>
+            ))}
+
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

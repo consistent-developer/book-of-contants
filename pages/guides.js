@@ -47,8 +47,6 @@ export default function Guides () {
         <div key={guide.title}>
           <h3>{guide.title}</h3>
           <h4>written by {guide.author}</h4>
-          
-          
         </div>
       ))}
     </div>

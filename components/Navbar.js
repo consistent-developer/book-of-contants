@@ -15,7 +15,7 @@ export default function Navbar () {
         {authReady && (
           <ul className="flex justify-end mx-1 mt-4 mb-6 flex cursor-pointer">
             <li className="mx-1 md:mx-3 self-center "><Link href="/"><a>Home</a></Link></li>
-            <li className="mx-1 md:mx-3 self-center"><Link href="/guides"><a>Chapters</a></Link></li>
+            <li className="mx-1 md:mx-3 self-center"><Link href="/home"><a>Chapters</a></Link></li>
             <li className="mx-1 md:mx-3 self-center"><Link href="/guides"><a>Projects</a></Link></li>
           </ul>
         )}
