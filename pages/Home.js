@@ -36,7 +36,7 @@ export default function Guides () {
   }, [user, authReady])
 
   return (
-    <div className="tracking-widest px-6 ">
+    <div className="tracking-widest px-6 pb-10">
 
 
 
