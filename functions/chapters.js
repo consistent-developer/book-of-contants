@@ -1,7 +1,7 @@
 exports.handler = async (event, context) => {
   const chapters = [
     {
-      "title": "Chapter_1",
+      "title": "Chapter 1",
       "body": "Installation",
       "type": "Next Js",
       "images": "https://i.ibb.co/c2Hwpj6/Product-Launch.png",
