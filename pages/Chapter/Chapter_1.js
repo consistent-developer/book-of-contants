@@ -64,7 +64,8 @@ export default function Chapter_1 () {
           <div className="">
             {chapters &&
               <div>
-                hwllo
+                chapter 1
+                
             </div>
             }
           </div>
