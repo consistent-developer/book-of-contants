@@ -9,7 +9,7 @@ export default function Navbar () {
   console.log(user)
   return (
 
-    <div className="pt-0.5 bg-white tracking-wider" >
+    <div className="mt-0.5 bg-white tracking-wider" >
       <nav className="text-base text-gray-600 lg:text-xl">
 
         {/* // <ul className="flex  mt-4 mb-6 flex cursor-pointer">
@@ -20,7 +20,7 @@ export default function Navbar () {
 
 
         {authReady && (
-          <ul className="flex justify-between mx-1 mt-4  flex cursor-pointer">
+          <ul className="flex justify-between mx-1 lg:mx-20 mt-4 flex cursor-pointer">
             <div>
               <h1 className="text-gray-600 font-bold">Concept of book</h1>
             </div>
