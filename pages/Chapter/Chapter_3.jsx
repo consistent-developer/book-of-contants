@@ -49,7 +49,7 @@ export default function Guides() {
       <ReadMinutes />
       <div className='tracking-widest pb-10 lg:mx-60 px-2'>
         {/* Hero Image  */}
-        <h1 className='pb-3 text mt-6 text-2xl lg:text-3xl font-bold text-center tracking-widest text'>CHAPTER 2</h1>
+        <h1 className='pb-3 text mt-6 text-2xl lg:text-3xl font-bold text-center tracking-widest text'>CHAPTER 3</h1>
         <div className='lg:w-1/2 md:w-1/2 w-full mx-auto'>
           <div className='h-full flex items-center'>
             <img className='mt-4 w-full  md:4/12 mb-10 mx-auto imageBackground object-cover object-center rounded-xl' alt='hero' src='../../PNG/Analytics.png' />
@@ -94,7 +94,7 @@ export default function Guides() {
                     <div className='w-full mx-auto'>
                       <div className='grid gap-5 mx-0 mt-6'>
                         <div className='col-start-1 col-end-3 my-2'>
-                          <a href='/Chapter/Chapter_1'>
+                          <a href='/Chapter/Chapter_2'>
                             <div className='h-full dark:bg-gray-800 bg-white rounded'>
                               <h3 className='text-xl mb-3 font-semibold inline-flex'>
                                 <svg className='mr-2' width='24' height='30' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -102,12 +102,12 @@ export default function Guides() {
                                 </svg>
                                 Prev
                               </h3>
-                              <p className='text-sm md:text-base text-left tracking-wide'>Chapter 1</p>
+                              <p className='text-sm md:text-base text-left tracking-wide'>Chapter 2</p>
                             </div>
                           </a>
                         </div>
                         <div className='col-end-5 col-span-2 my-2'>
-                          <a href='/Chapter/Chapter_3'>
+                          <a href='/Chapter/Chapter_4'>
                             <div className='h-full dark:bg-gray-800 bg-white rounded text-right'>
                               <h3 className='text-xl mb-3 font-semibold inline-flex '>
                                 Next
@@ -115,7 +115,7 @@ export default function Guides() {
                                   <path d='M23.0677 11.9929L18.818 7.75739L17.4061 9.17398L19.2415 11.0032L0.932469 11.0012L0.932251 13.0012L19.2369 13.0032L17.4155 14.8308L18.8321 16.2426L23.0677 11.9929Z' fill='currentColor' />
                                 </svg>
                               </h3>
-                              <p className='text-sm md:text-base text-right tracking-wide'>Chapter 3</p>
+                              <p className='text-sm md:text-base text-right tracking-wide'>Chapter 4</p>
                             </div>
                           </a>
                         </div>
