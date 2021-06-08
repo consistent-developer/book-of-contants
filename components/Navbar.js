@@ -20,10 +20,15 @@ export default function Navbar () {
 
 
         {authReady && (
-          <ul className="flex justify-end mx-1 mt-4  flex cursor-pointer">
-            {!user && <li onClick={login} className="btn flex justify-end self-center ">Log in/Sign up</li>}
-            {/* {user && <li >{user.email}</li>} */}
-            {user && <li onClick={logout} className="btn self-center">Log Out</li>}
+          <ul className="flex justify-between mx-1 mt-4  flex cursor-pointer">
+            <div>
+              <h1 className="text-gray-600 font-bold">Concept of book</h1>
+            </div>
+            <div>
+              {!user && <li onClick={login} className="btn flex justify-end self-center ">Log in/Sign up</li>}
+              {/* {user && <li >{user.email}</li>} */}
+              {user && <li onClick={logout} className="btn self-center">Log Out</li>}
+            </div>
           </ul>
         )}
 

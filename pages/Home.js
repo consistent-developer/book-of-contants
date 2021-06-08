@@ -2,7 +2,6 @@ import { useContext, useEffect, useState } from 'react'
 import AuthContext from '../stores/authContaxts'
 import ReadMinutesBottom from "../components/ReadMinutesBottom"
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function Guides () {
   const { user, authReady, login } = useContext(AuthContext)
@@ -36,9 +35,7 @@ export default function Guides () {
   }, [user, authReady])
 
   return (
-    <div className="tracking-widest px-6 pb-10">
-
-
+    <div className="tracking-widest px-2 pb-10">
 
       {/* Hero Image  */}
       <div className="lg:w-1/3 md:w-1/2 w-full mx-auto">
@@ -56,7 +53,7 @@ export default function Guides () {
 
       {/* Chapters */}
       <section className="text-gray-600 body-font">
-        <div className=" my-10 lg:mt-20 mx-auto">
+        <div className="my-10 lg:mt-20 mx-auto">
 
 
           {/* Card Tile  */}
@@ -76,28 +73,25 @@ export default function Guides () {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 -m-2">
             {chapters && chapters.map(chapter => (
-
-
               <div key={chapter.title}>
-
 
                 <Link href={chapter.path}>
                   <a>
-                    <div className="m-2">
+                    <div className="my-2">
                       <div className="w-full border-gray-200">
-                        <div className="h-full flex items-center  border p-4 rounded-lg">
+                        <div className="h-full flex items-center border rounded-lg">
                           <img alt="team" className="w-28 h-28 bg-gray-100 object-cover object-center flex-shrink-0 rounded-lg mr-4" src={chapter.images} />
                           <div className="flex-grow">
                             <h6 className="w-20 mb-2 text-sm p-0.5 text-center text-white bg-green-400 rounded-md">{chapter.type}</h6>
                             <h2 className="text-gray-900 title-font lg:text-2xl font-medium">{chapter.title}</h2>
                             <p className="text-gray-500 lg:text-base">{chapter.body}</p>
-                            <p className="text-gray-500 lg:text-base">{chapter.id}</p>
                           </div>
                         </div>
                       </div>
                     </div>
                   </a>
                 </Link>
+
               </div>
             ))}
 

@@ -10,7 +10,7 @@ const Headers = () => {
         <link rel="/apple-touch-icon" href="../apple-icon-180.png" />
         <meta name="book-of-contant-statusbar-style" content="black-translucent" />
         <meta name="viewport" content="initial-scale=1, viewport-fit=cover, user-scalable=none" />
-       
+
         <meta name="apple-mobile-web-app-capable" content="yes" />
 
         <link rel="/apple-touch-startup-image" href="/apple-splash-2048-2732.jpg"
@@ -72,7 +72,9 @@ const Headers = () => {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css" />
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
+        <link rel="stylesheet"
+          href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.1/build/styles/default.min.css" />
+        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.1/build/highlight.min.js"></script>
       </Head>
     </div>
   );
