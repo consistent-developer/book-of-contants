@@ -90,6 +90,7 @@ export default function Guides() {
                   <br />
                   <div className='text-center'>
                     <Code code={install} language='javascript' />
+                    
                   </div>
                   <br />
                   <h1 className='text mt-6 text-xl lg:text-2xl font-bold tracking-widest text'>Manual Setup</h1>
