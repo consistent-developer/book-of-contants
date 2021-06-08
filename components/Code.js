@@ -7,7 +7,7 @@ export default function Code ({ code, language }) {
     Prism.highlightAll();
   }, []);
   return (
-    <div className="Code text-xs md:text-base">
+    <div className="Code text-sm md:text-base mt-6 mb-6">
       <pre>
         <code className={`language-${language}`}>{code}</code>
       </pre>
