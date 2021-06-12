@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.1",
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.2.3",
     "netlify-identity-widget": "^1.9.1",

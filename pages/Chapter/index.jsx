@@ -1,11 +1,11 @@
 import { useContext, useEffect, useState } from "react"
-import AuthContext from "../stores/authContaxts"
+import AuthContext from "../../stores/authContaxts"
 
 import Link from "next/link"
 import Image from "next/image"
-import ReadMinutesBottom from "../components/ReadMinutesBottom"
+import ReadMinutesBottom from "../../components/ReadMinutesBottom"
 
-export default function Home () {
+export default function Guides() {
   const { user, authReady, login } = useContext(AuthContext)
   const [chapters, setChapters] = useState(null)
   const [error, setError] = useState(null)
@@ -77,7 +77,7 @@ export default function Home () {
                       <div className='py-2'>
                         <div className='w-full border-gray-400'>
                           <div className='h-full flex items-center border'>
-                            <img alt='team' className='w-28 h-28 md:w-40 md:h-40 bg-blue-50 object-cover object-center flex-shrink-0 mr-4' src={chapter.images} />
+                            <img alt='team' className='w-28 h-28 md:w-40 md:h-40 bg-blue-50 object-cover object-center flex-shrink-0 mr-4' src={chapter.images}/>
                             <div className='flex-grow md:ml-4'>
                               <h6 className='w-20 mb-4  md:mb-6 text-sm p-0.5 text-center text-white bg-green-400'>{chapter.type}</h6>
                               <h2 className='text-gray-900 md:mb-2 title-font lg:text-2xl font-medium'>{chapter.title}</h2>

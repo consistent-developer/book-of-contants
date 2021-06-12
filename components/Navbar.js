@@ -4,6 +4,7 @@ import { useContext } from 'react'
 import AuthContext from '../stores/authContaxts'
 
 export default function Navbar () {
+  
 
   const { user, login, logout, authReady } = useContext(AuthContext)
   console.log(user)
@@ -34,27 +35,21 @@ export default function Navbar () {
 
 
         {authReady && (
-          <div class="w-full">
-            <section id="bottom-navigation" class="block fixed inset-x-0 bottom-0 z-10 bg-white shadow">
-              <div id="tabs" class="flex justify-between">
-                <Link href="/home">
-                  <a class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
-                    <svg width="25" height="25" viewBox="0 0 42 42" class="inline-block mb-1">
-                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <path d="M21.0847458,3.38674884 C17.8305085,7.08474576 17.8305085,10.7827427 21.0847458,14.4807396 C24.3389831,18.1787365 24.3389831,22.5701079 21.0847458,27.6548536 L21.0847458,42 L8.06779661,41.3066256 L6,38.5331279 L6,26.2681048 L6,17.2542373 L8.88135593,12.4006163 L21.0847458,2 L21.0847458,3.38674884 Z" fill="currentColor" fill-opacity="0.1"></path>
-                        <path d="M11,8 L33,8 L11,8 Z M39,17 L39,36 C39,39.3137085 36.3137085,42 33,42 L11,42 C7.6862915,42 5,39.3137085 5,36 L5,17 L7,17 L7,36 C7,38.209139 8.790861,40 11,40 L33,40 C35.209139,40 37,38.209139 37,36 L37,17 L39,17 Z" fill="currentColor"></path>
-                        <path d="M22,27 C25.3137085,27 28,29.6862915 28,33 L28,41 L16,41 L16,33 C16,29.6862915 18.6862915,27 22,27 Z" stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.1"></path>
-                        <rect fill="currentColor" transform="translate(32.000000, 11.313708) scale(-1, 1) rotate(-45.000000) translate(-32.000000, -11.313708) " x="17" y="10.3137085" width="30" height="2" rx="1"></rect>
-                        <rect fill="currentColor" transform="translate(12.000000, 11.313708) rotate(-45.000000) translate(-12.000000, -11.313708) " x="-3" y="10.3137085" width="30" height="2" rx="1"></rect>
-                      </g>
+          <div className="">
+            <section id="bottom-navigation" className="mt-10 block fixed inset-x-0 bottom-0 z-10 bg-white shadow">
+              <div id="tabs" className="flex justify-between">
+                <Link href="/home" className="">
+                  <a className="w-full focus:text-green-400 focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="inline-block h-14" fill="none" viewBox="0 0 42 42" stroke="currentColor">
+                      <path strokeLinecap="" strokeLinejoin="" strokeWidth={1} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                     </svg>
-                    {/* <span class="tab tab-home block text-xs">Home</span> */}
+                    {/* <span className="tab tab-home block text-xs">Home</span> */}
                   </a>
                 </Link>
 
-                <Link href="/home">
-                  <a href="#" class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
-                    <svg width="25" height="25" viewBox="0 0 42 42" class="inline-block mb-1">
+                <Link href="/Chapter">
+                  <a href="#" className="w-full focus:text-green-400 focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
+                    <svg width="25" height="25" viewBox="0 0 42 42" className="inline-block mb-1">
                       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <path d="M14.7118754,20.0876892 L8.03575361,20.0876892 C5.82661462,20.0876892 4.03575361,18.2968282 4.03575361,16.0876892 L4.03575361,12.031922 C4.03575361,8.1480343 6.79157254,4.90780265 10.4544842,4.15995321 C8.87553278,8.5612583 8.1226025,14.3600511 10.9452499,15.5413938 C13.710306,16.6986332 14.5947501,18.3118357 14.7118754,20.0876892 Z M14.2420017,23.8186831 C13.515543,27.1052019 12.7414284,30.2811559 18.0438552,31.7330419 L18.0438552,33.4450645 C18.0438552,35.6542035 16.2529942,37.4450645 14.0438552,37.4450645 L9.90612103,37.4450645 C6.14196811,37.4450645 3.09051926,34.3936157 3.09051926,30.6294627 L3.09051926,27.813861 C3.09051926,25.604722 4.88138026,23.813861 7.09051926,23.813861 L14.0438552,23.813861 C14.1102948,23.813861 14.1763561,23.8154808 14.2420017,23.8186831 Z M20.7553776,32.160536 C23.9336213,32.1190063 23.9061943,29.4103976 33.8698747,31.1666916 C34.7935223,31.3295026 35.9925894,31.0627305 37.3154077,30.4407183 C37.09778,34.8980343 33.4149547,38.4450645 28.9036761,38.4450645 C24.9909035,38.4450645 21.701346,35.7767637 20.7553776,32.160536 Z" fill="currentColor" opacity="0.1"></path>
                         <g transform="translate(2.000000, 3.000000)">
@@ -66,20 +61,20 @@ export default function Navbar () {
                         </g>
                       </g>
                     </svg>
-                    {/* <span class="tab tab-kategori block text-xs">Category</span> */}
+                    {/* <span className="tab tab-kategori block text-xs">Category</span> */}
                   </a>
                 </Link>
 
-                <Link href="/home">
-                  <a href="#" class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
-                    <svg width="25" height="25" viewBox="0 0 42 42" class="inline-block mb-1">
+                <Link href="https://google-clone-mu-three.vercel.app">
+                  <a className="w-full focus:text-green-400 focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
+                    <svg width="25" height="25" viewBox="0 0 42 42" className="inline-block mb-1">
                       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <path d="M20.5890101,0.254646884 C12.8696785,5.50211755 8.0025785,14.258415 14.1941217,18.8708225 C23.16683,25.5550669 13.3362326,40.2698884 33.1021758,38.4149164 C29.6814884,40.8311956 25.5065164,42.2507054 21,42.2507054 C9.40202025,42.2507054 0,32.8486852 0,21.2507054 C0,9.79003409 9.18071714,0.473634138 20.5890101,0.254646884 Z" fill="currentColor" opacity="0.1"></path>
                         <path d="M25.9500282,20.3643496 L22.4308312,38.2677802 C22.3775703,38.5387376 22.1147395,38.7152155 21.8437821,38.6619546 C21.6570955,38.6252584 21.507413,38.4857901 21.4576354,38.3021581 L16.5951895,20.3643496 L20.099732,4.44663907 C20.1385204,4.27046145 20.2692032,4.12883813 20.4417012,4.07604096 C20.7057521,3.99522179 20.9853245,4.14376046 21.0661436,4.40781135 L25.9500282,20.3643496 Z M21.3022963,22.2852638 C22.4068658,22.2852638 23.3022963,21.3898333 23.3022963,20.2852638 C23.3022963,19.1806943 22.4068658,18.2852638 21.3022963,18.2852638 C20.1977268,18.2852638 19.3022963,19.1806943 19.3022963,20.2852638 C19.3022963,21.3898333 20.1977268,22.2852638 21.3022963,22.2852638 Z" fill="currentColor" transform="translate(21.272609, 20.629524) rotate(-315.000000) translate(-21.272609, -20.629524) "></path>
                         <circle stroke="currentColor" stroke-width="2" cx="21" cy="21" r="20"></circle>
                       </g>
                     </svg>
-                    {/* <span class="tab tab-explore block text-xs">Explore</span> */}
+                    {/* <span className="tab tab-explore block text-xs">Explore</span> */}
                   </a>
                 </Link>
 

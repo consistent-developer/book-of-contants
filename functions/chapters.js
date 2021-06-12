@@ -67,6 +67,6 @@ exports.handler = async (event, context) => {
   // return error status
   return {
     statusCode: 401,
-    body: JSON.stringify({ mssg: 'ah ah ah, you must be logged into see this' })
+    body: JSON.stringify({ mssg: 'oh, you must be logged into see this' })
   }
 }

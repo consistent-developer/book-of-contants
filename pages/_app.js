@@ -1,3 +1,4 @@
+import Footer from '../components/footer'
 import Headers from '../components/headers'
 import Navbar from '../components/Navbar'
 import { AuthContextProvider } from '../stores/authContaxts'
@@ -10,6 +11,7 @@ function MyApp ({ Component, pageProps }) {
       <AuthContextProvider>
         <Navbar />
         <Component {...pageProps} />
+        <Footer />
       </AuthContextProvider>
 
     </div>
