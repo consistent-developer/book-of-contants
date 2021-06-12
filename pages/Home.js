@@ -82,6 +82,7 @@ export default function Home () {
                               <h6 className='w-20 mb-4  md:mb-6 text-sm p-0.5 text-center text-white bg-green-400'>{chapter.type}</h6>
                               <h2 className='text-gray-900 md:mb-2 title-font lg:text-2xl font-medium'>{chapter.title}</h2>
                               <p className='text-gray-500 text-sm md:mb-4 lg:text-base'>{chapter.body}</p>
+                              
                             </div>
                           </div>
                         </div>
