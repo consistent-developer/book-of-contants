@@ -4,13 +4,8 @@ import Code from "../../components/Code"
 import ReadMinutes from "../../components/ReadMinutes"
 import Link from "next/link"
 
-const install = `npx create-next-app
-# or
-yarn create next-app
-`
-const installmenual = `npm install next react react-dom
-# or
-yarn add next react react-dom`
+const install = `python helloworld.py`
+const installmenual = `print("Hello, World!")`
 
 const installMenualScript = `"scripts": {
   "dev": "next dev",
@@ -63,7 +58,7 @@ export default function Chapter_1() {
           </div>
         </div>
 
-        <h1 className='text mt-0 text-xl lg:text-2xl font-bold tracking-widest text'>System Requirements</h1>
+        <h1 className='text mt-0 text-xl lg:text-2xl font-bold tracking-widest text'>What is Python</h1>
         {/* Chapters */}
         <section className='text-gray-600 body-font'>
           <div className='mt-6 lg:mt-6 mx-auto'>
@@ -76,32 +71,30 @@ export default function Chapter_1() {
             <div className=''>
               {chapters && (
                 <div>
+                  <h1>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</h1>
+                  <br />
+                  <h1>It use for...</h1>
+                  <br />
                   <ul className='list-disc list-inside text2 '>
-                    <li>Node.js 10.13 or later</li>
-                    <br />
-                    <li>Node.js 10.13 or later MacOS, Windows (including WSL), and Linux are supported</li>
+                    <li>web development</li>
+                    <li>software development</li>
+                    <li>mathematics</li>
+                    <li>system scripting.</li>
                   </ul>
                   <br />
                   <div className='text-center'></div>
-                  <h1 className='text mt-6 text-xl lg:text-2xl font-bold tracking-widest text'>Setup</h1>
-                  <h2 className='mt-4 lg:mt-6'>
-                    We recommend creating a new Next.js app using <h>create-next-app</h>, which sets up everything automatically for you. To create a project, run:
+                  <h1 className='text mt-4 text-xl lg:text-2xl font-bold tracking-widest text'>Python Quickstart</h1>
+                  <h2 className='mt-2 lg:mt-4'>
+                    Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed. <br />
+                    <br /> The way to run a python file is like this on the command line:
                   </h2>
-                  <br />
                   <div className='text-center'>
-                    <Code code={install} language='javascript' />
+                    <Code code={install} language='Bash' />
                   </div>
-                  <br />
-                  <h1 className='text text-xl lg:text-2xl font-bold tracking-widest text'>Manual Setup</h1>
-                  <h2 className='mt-6 lg:mt-6'>
-                    Install <h>next</h>, <h>react</h> and <h>react-dom</h> in your project:
+                  <h2>
+                    <h>helloworld.py</h>
                   </h2>
                   <Code code={installmenual} language='javascript' className='text-sm' />
-
-                  <h2 className='mt-6 lg:mt-6'>
-                    Open <h>package.json</h> and add the following scripts:
-                  </h2>
-                  <Code code={installMenualScript} language='javascript' className='text-sm' />
                 </div>
               )}
             </div>
@@ -114,7 +107,7 @@ export default function Chapter_1() {
             <div className='grid gap-5 mx-0 mt-6'>
               <div className='col-start-1 col-end-3 my-2'></div>
               <div className='col-end-5 col-span-2 my-2'>
-                <Link href='/Chapter/Chapter_2'>
+                <Link href='/python/Chapter_2'>
                   <a>
                     <div className='h-full dark:bg-gray-800 bg-white rounded text-right'>
                       <h3 className='text-xl mb-3 font-semibold inline-flex '>

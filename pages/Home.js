@@ -1,11 +1,10 @@
 import { useContext, useEffect, useState } from "react"
 import AuthContext from "../stores/authContaxts"
-
 import Link from "next/link"
 import Image from "next/image"
 import ReadMinutesBottom from "../components/ReadMinutesBottom"
 
-export default function Home () {
+export default function Guides () {
   const { user, authReady, login } = useContext(AuthContext)
   const [chapters, setChapters] = useState(null)
   const [error, setError] = useState(null)
@@ -43,7 +42,7 @@ export default function Home () {
       {/* Hero Image  */}
       <div className='lg:w-1/3 md:w-1/2 w-full mx-auto'>
         <div className='h-full flex items-center'>
-          <img className='mt-4 w-full  md:4/12 mb-10 mx-auto imageBackground object-cover object-center' alt='hero' src='PNG/Presentation.png'></img>
+          <img className='mt-4 w-full md:4/12 mb-10 mx-auto imageBackground object-cover object-center' alt='hero' src='PNG/Presentation.png'></img>
         </div>
       </div>
 
@@ -57,7 +56,6 @@ export default function Home () {
           {/* Card Tile  */}
           <div className='flex flex-col w-full mb-4'>
             <h1 className='sm:text-3xl text-2xl font-medium text-gray-900'>Chapters</h1>
-            {/* <p className="lg:w-2/3 leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p> */}
           </div>
 
           {!authReady && <div>Loading...</div>}
@@ -68,30 +66,62 @@ export default function Home () {
             </div>
           )}
 
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-6 -m-2'>
+          <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-x-6 -m-2 md:px-20'>
             {chapters &&
-              chapters.map((chapter) => (
-                <div key={chapter.title}>
-                  <Link href={chapter.path}>
-                    <a>
-                      <div className='py-2'>
-                        <div className='w-full border-gray-400'>
-                          <div className='h-full flex items-center border'>
-                            <img alt='team' className='w-28 h-28 md:w-40 md:h-40 bg-blue-50 object-cover object-center flex-shrink-0 mr-4' src={chapter.images} />
-                            <div className='flex-grow md:ml-4'>
-                              <h6 className='w-20 mb-4  md:mb-6 text-sm p-0.5 text-center text-white bg-green-400'>{chapter.type}</h6>
-                              <h2 className='text-gray-900 md:mb-2 title-font lg:text-2xl font-medium'>{chapter.title}</h2>
-                              <p className='text-gray-500 text-sm md:mb-4 lg:text-base'>{chapter.body}</p>
-                              
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </Link>
-                </div>
-              ))}
+              <div>
+                <Link href="">
+                  <a>
+                    
+                  </a>
+                </Link>
+              </div>
+
+            }
           </div>
+
+
+          <section class="text-gray-600 body-font m-2 lg:mx-20 lg:mt-5">
+            <div class="mx-auto">
+              <div class="flex flex-wrap -m-4">
+               
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                  <div class="bg-blue-50 p-6 rounded-lg">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content" />
+                    <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">SUBTITLE</h3>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">HTML</h2>
+                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                  </div>
+                </div>
+
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                  <div class="bg-blue-50 p-6 rounded-lg">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content" />
+                    <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">SUBTITLE</h3>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">CSS</h2>
+                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                  </div>
+                </div>
+
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                  <div class="bg-blue-50 p-6 rounded-lg">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content" />
+                    <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">SUBTITLE</h3>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">C Language</h2>
+                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                  </div>
+                </div>
+                
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                  <div class="bg-blue-50 p-6 rounded-lg">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content" />
+                    <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">SUBTITLE</h3>
+                    <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Python</h2>
+                    <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
     </div>

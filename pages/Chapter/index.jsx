@@ -1,6 +1,5 @@
 import { useContext, useEffect, useState } from "react"
 import AuthContext from "../../stores/authContaxts"
-
 import Link from "next/link"
 import Image from "next/image"
 import ReadMinutesBottom from "../../components/ReadMinutesBottom"
@@ -57,7 +56,6 @@ export default function Guides() {
           {/* Card Tile  */}
           <div className='flex flex-col w-full mb-4'>
             <h1 className='sm:text-3xl text-2xl font-medium text-gray-900'>Chapters</h1>
-            {/* <p className="lg:w-2/3 leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p> */}
           </div>
 
           {!authReady && <div>Loading...</div>}
@@ -68,16 +66,16 @@ export default function Guides() {
             </div>
           )}
 
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-6 -m-2'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-6 -m-2 md:px-20'>
             {chapters &&
               chapters.map((chapter) => (
                 <div key={chapter.title}>
                   <Link href={chapter.path}>
                     <a>
                       <div className='py-2'>
-                        <div className='w-full border-gray-400'>
+                        <div className='w-full border border-gray-200 shadow-md '>
                           <div className='h-full flex items-center border'>
-                            <img alt='team' className='w-28 h-28 md:w-40 md:h-40 bg-blue-50 object-cover object-center flex-shrink-0 mr-4' src={chapter.images}/>
+                            <img alt='team' className='w-28 h-28 md:w-40 md:h-40 bg-blue-50 object-cover object-center flex-shrink-0 mr-4' src={chapter.images} />
                             <div className='flex-grow md:ml-4'>
                               <h6 className='w-20 mb-4  md:mb-6 text-sm p-0.5 text-center text-white bg-green-400'>{chapter.type}</h6>
                               <h2 className='text-gray-900 md:mb-2 title-font lg:text-2xl font-medium'>{chapter.title}</h2>

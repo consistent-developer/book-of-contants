@@ -22,3 +22,7 @@ https://i.ibb.co/0XF2zG5/Selfie.png
 https://i.ibb.co/2nT1WD8/Service.png
 https://i.ibb.co/cbp9gDx/Shopping.png
 https://i.ibb.co/6gS9Dyz/Support.png
+
+for html : https://media.istockphoto.com/vectors/coding-vector-icon-round-style-illustration-vector-id1205058662?k=6&m=1205058662&s=612x612&w=0&h=UxG7GkfbASVsp0Y7NkDLzHgV12aU1VFfGu9WE2Kb5cg=
+
+for css : https://media.istockphoto.com/vectors/code-programming-icon-vector-isolated-contour-symbol-illustration-vector-id1206833607?k=6&m=1206833607&s=612x612&w=0&h=LGLGnUP9XnLWnfniJjP4oB13BRaEexK0CMHBuJ9wDvw=
