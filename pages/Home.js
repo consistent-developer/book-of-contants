@@ -66,7 +66,7 @@ export default function Guides () {
             </div>
           )}
 
-          <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-x-6 -m-2 md:px-20'>
+          <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-x-6 -m-2 md:px-20'>
             {chapters &&
               <div>
                 <Link href="">
@@ -82,12 +82,12 @@ export default function Guides () {
 
           <section class="text-gray-600 body-font m-2 lg:mx-20 lg:mt-5">
             <div class="mx-auto">
-              <div class="flex flex-wrap -m-4">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 -m-4">
 
                 <div>
                   <Link href="/Chapter">
                     <a>
-                      <div class="xl:w-1/2 md:w-1/2 p-4">
+                      <div class="w-full p-4">
                         <div class="">
                           <img class="p-6 mx-auto h-40 object-cover object-center mb-6" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/110px-Python-logo-notext.svg.png" alt="content" />
                           <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Python</h2>
@@ -101,7 +101,7 @@ export default function Guides () {
                 <div>
                   <Link href="/Chapter">
                     <a>
-                      <div class="xl:w-1/2 md:w-1/2 p-4">
+                      <div class="w-full p-4">
                         <div class=" rounded-lg">
                           <img class="p-6 mx-auto h-40 object-cover object-center mb-6" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/220px-Nextjs-logo.svg.png" alt="content" />
                           <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Next Js</h2>

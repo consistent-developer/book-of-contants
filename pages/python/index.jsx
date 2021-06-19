@@ -12,7 +12,7 @@ export default function Guides() {
   useEffect(() => {
     if (authReady) {
       fetch(
-        "/.netlify/functions/chapters",
+        "/.netlify/functions/chapters_python",
         user && {
           headers: {
             Authorization: "Bearer " + user.token.access_token,
@@ -42,7 +42,7 @@ export default function Guides() {
       {/* Hero Image  */}
       <div className='lg:w-1/3 md:w-1/2 w-full mx-auto'>
         <div className='h-full flex items-center'>
-          <img className='mt-4 w-full  md:4/12 mb-10 mx-auto imageBackground object-cover object-center' alt='hero' src='PNG/Presentation.png'></img>
+          <img className='mt-4 w-full md:4/12 mb-10 mx-auto imageBackground object-cover object-center' alt='hero' src='PNG/Presentation.png'></img>
         </div>
       </div>
 
