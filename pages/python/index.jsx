@@ -72,9 +72,9 @@ export default function Guides() {
                 <div key={chapter.title}>
                   <Link href={chapter.path}>
                     <a>
-                      <div className='py-2'>
+                      <div className='py-2 '>
                         <div className='w-full border border-gray-200 shadow-md '>
-                          <div className='h-full flex items-center border'>
+                          <div className='h-full flex items-center border hover:bg-blue-50'>
                             <img alt='team' className='w-28 h-28 md:w-40 md:h-40 bg-blue-50 object-cover object-center flex-shrink-0 mr-4' src={chapter.images} />
                             <div className='flex-grow md:ml-4'>
                               <h6 className='w-20 mb-4  md:mb-6 text-sm p-0.5 text-center text-white bg-green-400'>{chapter.type}</h6>

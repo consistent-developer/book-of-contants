@@ -42,7 +42,7 @@ export default function Guides () {
       {/* Hero Image  */}
       <div className='lg:w-1/3 md:w-1/2 w-full mx-auto'>
         <div className='h-full flex items-center'>
-          <img className='mt-4 w-full md:4/12 mb-10 mx-auto imageBackground object-cover object-center' alt='hero' src='https://res.cloudinary.com/webalys/image/private/w_400,h_400,ar_1/f_auto/v1/icons/djakarta/education/education/online-exams-1-8e670exhfxkcvbs59gg097.png'></img>
+          <img className='mt-4 w-full md:4/12 mb-10 mx-auto object-cover object-center bg-blue-50' alt='hero' src='../PNG/Customize.png'></img>
         </div>
       </div>
 
@@ -87,11 +87,11 @@ export default function Guides () {
                 <div>
                   <Link href="/python/">
                     <a>
-                      <div class="w-full p-4">
+                      <div class="w-full p-2">
                         <div class="">
-                          <img class="p-6 mx-auto h-40 object-cover object-center mb-6" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/110px-Python-logo-notext.svg.png" alt="content" />
+                          <img class="p-6 mx-auto h-40 object-cover object-center mb-6" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/165px-Python-logo-notext.svg.png" alt="content" />
                           <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Python</h2>
-                          <p class="leading-relaxed text-base">Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming.</p>
+                          <p class="leading-relaxed text-base">Python is an easy to learn, powerful programming language.</p>
                         </div>
                       </div>
                     </a>
@@ -101,11 +101,11 @@ export default function Guides () {
                 <div>
                   <Link href="/Chapter">
                     <a>
-                      <div class="w-full p-4">
+                      <div class="w-full p-2">
                         <div class=" rounded-lg">
                           <img class="p-6 mx-auto h-40 object-cover object-center mb-6" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/220px-Nextjs-logo.svg.png" alt="content" />
                           <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Next Js</h2>
-                          <p class="leading-relaxed text-base">Working on a modern JavaScript application powered by React is awesome until you realize that there are a couple problems related to rendering all the content on the client-side.<h> Solution: </h>Next Js.</p>
+                          <p class="leading-relaxed text-base">Modern JavaScript application powered by React.<h> Solution: </h>Next Js.</p>
                         </div>
                       </div>
                     </a>
