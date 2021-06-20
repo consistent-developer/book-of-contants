@@ -85,7 +85,7 @@ export default function Guides () {
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4 -m-4">
 
                 <div>
-                  <Link href="/Chapter">
+                  <Link href="/python/">
                     <a>
                       <div class="w-full p-4">
                         <div class="">

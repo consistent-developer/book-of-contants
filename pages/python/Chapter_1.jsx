@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react"
 import AuthContext from "../../stores/authContaxts"
 import Code from "../../components/Code"
-import ReadMinutes from "../../components/ReadMinutes"
+import ReadMinutes from "../../components/ReadMinutes_python"
 import Link from "next/link"
 
 const install = `python helloworld.py`
@@ -48,7 +48,7 @@ export default function Chapter_1() {
 
   return (
     <div className='mb-10 text-sm md:text-base '>
-      <ReadMinutes />
+      <ReadMinutes/>
       <div className='tracking-widest pb-10 lg:mx-60 px-2'>
         {/* Hero Image  */}
         <h1 className='pb-3 text mt-6 text-2xl lg:text-3xl font-bold text-center tracking-widest text'>CHAPTER 1</h1>
@@ -89,7 +89,7 @@ export default function Chapter_1() {
                     <br /> The way to run a python file is like this on the command line:
                   </h2>
                   <div className='text-center'>
-                    <Code code={install} language='Bash' />
+                    <Code code={install} language='javascript' />
                   </div>
                   <h2>
                     <h>helloworld.py</h>

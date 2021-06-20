@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react"
 import AuthContext from "../../stores/authContaxts"
 import Code from "../../components/Code"
-import ReadMinutes from "../../components/ReadMinutes"
+import ReadMinutes from "../../components/ReadMinutes_python"
 import Link from "next/link"
 
 const install = `x = 5
@@ -86,15 +86,15 @@ export default function Chapter_2() {
                   </h2>
 
                   <div className='text-center'>
-                    <Code code={install} language='Python' className='language-python' />
+                    <Code code={install} language='javascript' className='language-python' />
                   </div>
                   <div className='text-center'>
-                    <Code code={install2} language='Python' />
+                    <Code code={install2} language='javascript' />
                   </div>
 
                   <h1 className='text mt-0 text-xl lg:text-2xl font-bold tracking-widest text'>Python Variables</h1>
                   <div className='text-center'>
-                    <Code code={install2} language='Python' />
+                    <Code code={install2} language='javascript' />
                   </div>
 
                   <h2 className=''>
@@ -107,7 +107,7 @@ export default function Chapter_2() {
                     <div className='w-full mx-auto'>
                       <div className='grid gap-5 mx-0 mt-6'>
                         <div className='col-start-1 col-end-3 my-2'>
-                          <Link href='/python/Chapter_1'>
+                          <Link href='/python/Chapter_2'>
                             <a>
                               <div className='h-full dark:bg-gray-800 bg-white rounded'>
                                 <h3 className='text-xl mb-3 font-semibold inline-flex'>
@@ -116,13 +116,13 @@ export default function Chapter_2() {
                                   </svg>
                                   Prev
                                 </h3>
-                                <p className='text-sm md:text-base text-left tracking-wide'>Chapter 1</p>
+                                <p className='text-sm md:text-base text-left tracking-wide'>Chapter 2</p>
                               </div>
                             </a>
                           </Link>
                         </div>
                         <div className='col-end-5 col-span-2 my-2'>
-                          <Link href='/python/Chapter_3'>
+                          <Link href='/python/Chapter_4'>
                             <a>
                               <div className='h-full dark:bg-gray-800 bg-white rounded text-right'>
                                 <h3 className='text-xl mb-3 font-semibold inline-flex '>
@@ -131,7 +131,7 @@ export default function Chapter_2() {
                                     <path d='M23.0677 11.9929L18.818 7.75739L17.4061 9.17398L19.2415 11.0032L0.932469 11.0012L0.932251 13.0012L19.2369 13.0032L17.4155 14.8308L18.8321 16.2426L23.0677 11.9929Z' fill='currentColor' />
                                   </svg>
                                 </h3>
-                                <p className='text-sm md:text-base text-right tracking-wide'>Chapter 3</p>
+                                <p className='text-sm md:text-base text-right tracking-wide'>Chapter 4</p>
                               </div>
                             </a>
                           </Link>

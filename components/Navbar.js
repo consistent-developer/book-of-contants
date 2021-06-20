@@ -26,7 +26,7 @@ export default function Navbar () {
 
         {authReady && (
           <div className="">
-            <section id="bottom-navigation" className="mt-10 block fixed inset-x-0 bottom-0 z-10 bg-white shadow">
+            <section id="bottom-navigation" className="mt-1 block fixed inset-x-0 bottom-0 z-1 bg-white shadow">
               <div id="tabs" className="flex justify-between mx-10 md:mx-20 lg:mx-80">
 
                 <div>
