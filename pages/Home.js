@@ -69,57 +69,47 @@ export default function Guides () {
           <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-x-6 -m-2 md:px-20'>
             {chapters &&
               <div>
-                <Link href="">
-                  <a>
+                <section class="text-gray-600 body-font m-2 lg:mx-20 lg:mt-5">
+                  <div class="mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 -m-4">
 
-                  </a>
-                </Link>
+                      <div>
+                        <Link href="/python/">
+                          <a>
+                            <div class="w-full p-2">
+                              <div class="">
+                                <img class="p-6 mx-auto h-40 object-cover object-center mb-6" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/165px-Python-logo-notext.svg.png" alt="content" />
+                                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Python</h2>
+                                <p class="leading-relaxed text-base">Python is an easy to learn, powerful programming language.</p>
+                              </div>
+                            </div>
+                          </a>
+                        </Link>
+                      </div>
+
+                      <div>
+                        <Link href="/Chapter">
+                          <a>
+                            <div class="w-full p-2">
+                              <div class=" rounded-lg">
+                                <img class="p-6 mx-auto h-40 object-cover object-center mb-6" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/220px-Nextjs-logo.svg.png" alt="content" />
+                                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Next Js</h2>
+                                <p class="leading-relaxed text-base">Modern JavaScript application powered by React.<h> Solution: </h>Next Js.</p>
+                              </div>
+                            </div>
+                          </a>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </section>
               </div>
 
             }
           </div>
 
 
-          <section class="text-gray-600 body-font m-2 lg:mx-20 lg:mt-5">
-            <div class="mx-auto">
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 -m-4">
 
-                <div>
-                  <Link href="/python/">
-                    <a>
-                      <div class="w-full p-2">
-                        <div class="">
-                          <img class="p-6 mx-auto h-40 object-cover object-center mb-6" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/165px-Python-logo-notext.svg.png" alt="content" />
-                          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Python</h2>
-                          <p class="leading-relaxed text-base">Python is an easy to learn, powerful programming language.</p>
-                        </div>
-                      </div>
-                    </a>
-                  </Link>
-                </div>
-
-                <div>
-                  <Link href="/Chapter">
-                    <a>
-                      <div class="w-full p-2">
-                        <div class=" rounded-lg">
-                          <img class="p-6 mx-auto h-40 object-cover object-center mb-6" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/220px-Nextjs-logo.svg.png" alt="content" />
-                          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Next Js</h2>
-                          <p class="leading-relaxed text-base">Modern JavaScript application powered by React.<h> Solution: </h>Next Js.</p>
-                        </div>
-                      </div>
-                    </a>
-                  </Link>
-                </div>
-
-
-
-
-
-
-              </div>
-            </div>
-          </section>
         </div>
       </section>
     </div>
